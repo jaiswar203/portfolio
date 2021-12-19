@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+body{
+    ::selection{
+        color: red;
+        background-color: transparent;
+    }
+    // background-color: #141617;
+    background-color: #000;
+    color: white;
+    // cursor: url('https://www.freeiconspng.com/thumbs/cursor-png/hand-cursor-png-click-cursor-hand-icon-13.png') ,auto;
+}
+
+$primary-color: #c71585;
+$secondary-color: #350DD3;
+$tertiary-color: #240090;
+$line-color: #190061;
+
+@mixin link-animation {
+    transition: all 01s ease-in-out;
+    color: $primary-color;
+}
+
+@mixin box-animation {
+    transition: all 0.5s ease-in-out;
+}
+
+
+@mixin intro-text-color {
+    background-image: linear-gradient(to right, #592870, #78315d, #824552, #815c55, #7d7068);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin para-color {
+    background-color: #923cb5;
+background-image: linear-gradient(147deg, #923cb5 0%, #605252 74%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

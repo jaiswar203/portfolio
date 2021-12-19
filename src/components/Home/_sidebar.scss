@@ -1,0 +1,21 @@
+.social {
+  position: fixed;
+  padding-left: 0.4rem;
+  top: 39%;
+  left: 0%;
+
+  &-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    i{
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+
+        &:hover{
+            @include link-animation;
+        }
+    }
+  }
+}

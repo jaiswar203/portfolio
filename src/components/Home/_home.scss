@@ -1,0 +1,184 @@
+main{
+    position: absolute;
+    top: 4rem;
+    
+    .intro{
+        padding: 3rem 0 3rem 3rem;
+        h3{
+            font-size: 1.7rem;
+            color: $tertiary-color;
+        }
+        h1{
+            font-size: 4rem;
+            color: $tertiary-color;
+        }
+        h2{
+            font-size: 2rem;
+            color: $tertiary-color;
+        }
+        h4{
+            font-size: 2rem;
+            color: $tertiary-color;
+        }
+    }
+
+    .contact{
+        padding: 3rem;
+        display: flex;
+        
+        button{
+            width: 6rem;
+            height: 3rem;
+            margin-right: 1rem;
+            background: $secondary-color;
+            border-radius: 5px;
+            color: whitesmoke;
+            outline: none;
+            border: none;
+
+            &:hover{
+                @include box-animation;
+                background: rgba($secondary-color, $alpha: 0.7);
+            }
+        }
+    }
+
+    // about
+    .about{
+        padding: 3rem 0 3rem 3rem;
+        &-title{
+            h1{
+                font-size: 2rem;
+                color: $secondary-color;
+            }
+        }
+
+        &-desc{
+            padding: 0 1rem;
+
+            p{
+                font-size: 1.3rem;
+                color: white;
+            }
+        }
+    }
+
+    // Techonologies
+    .technologies{
+        padding: 3rem 0 3rem 3rem;
+        h1{
+            font-size: 2rem;
+            color: $secondary-color;
+        }
+        &-desc{
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            justify-content: space-between;
+
+            .desc{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 2rem;
+                }
+                img{
+                    width: 3rem;
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+    
+    // Projects
+
+    
+}
+
+// responsive
+
+
+@media screen and (max-width:500px) {
+    #tsparticles{
+        height: 59vh;
+    }
+    main{
+        .intro{
+            // padding: 0;
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        .contact{
+            justify-content: space-evenly;
+            margin-top: -4rem;
+        }
+
+        .technologies{
+            &-desc{
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:501px) {
+    main{
+        .technologies{
+            &-desc{
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:329px) {
+    main{
+        position: absolute;
+        .contact{
+            button{
+                width: 5rem;
+                height: 2.5rem;
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+}
+
+hr{
+    width: 80%;
+    border: 1px solid $line-color;
+    &::before{
+        content: "";
+        width: 1rem;
+    }
+}
+
+.main-show{
+    filter: blur(20px);
+    pointer-events: none;
+    
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 96vh;
+}
+
+a{
+    pointer-events: none;
+}
