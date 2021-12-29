@@ -35,6 +35,12 @@ const Projects = () => {
                             <a href="https://crypto-news-app.netlify.app" target="_blank"><button>Visit</button></a>
                         </div>
                     </div>
+                    <div className="card" data-aos='fade-up' >
+                        <img src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640786902/Portpolio/Screenshot_245_nexqyn.png" alt="" />
+                        <div className="card-overlay">
+                            <a href="https://standalonev1.netlify.app/" target="_blank"><button>Visit</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
